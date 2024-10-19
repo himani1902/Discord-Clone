@@ -1,12 +1,11 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: sans-serif;
-   
-
 }
-main header{
+
+main header {
     width: 100%;
     display: flex;
     justify-content: center;
@@ -14,7 +13,8 @@ main header{
     background-size: cover;
     background-repeat: no-repeat;
 }
-main{
+
+main {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -24,19 +24,21 @@ main{
     background-size: cover;
     background-repeat: no-repeat;
 }
-header{
+
+header {
     background-color: #080943;
     width: 100%;
-    max-width:full ;
     display: flex;
     justify-content: space-between;
     padding: 20px 40px;
 }
-header .branding{
+
+header .branding {
     width: 124px;
     height: 34px;
 }
-.header-btn{
+
+.header-btn {
     padding: 8px 16px;
     font-size: 14px;
     font-weight: 500;
@@ -45,7 +47,8 @@ header .branding{
     cursor: pointer;
     background-color: white;
 }
-.hero{
+
+.hero {
     display: flex;
     max-width: 1180px;
     width: 100%;
@@ -54,126 +57,195 @@ header .branding{
     align-items: center;
     color: white;
     flex-direction: column;
+    text-align: center; 
 }
-.hero img{
-    width: 768px;
+
+.hero img {
+    width: 100%; 
+    max-width: 768px;
 }
-.details h1{
-   font-size: 44px;
-   text-transform: uppercase;
-   font-weight: 800; 
-   line-height: 1;
+
+.details h1 {
+    font-size: 44px;
+    text-transform: uppercase;
+    font-weight: 800;
+    line-height: 1;
 }
-.details p{
+
+.details p {
     margin-top: 10px;
     font-size: 18px;
 }
-.hero-btns{
+
+.hero-btns {
     margin-top: 30px;
     display: flex;
     gap: 20px;
+    flex-wrap: wrap; 
 }
-.hero-btns button{
+
+.hero-btns button {
     margin-top: 20px;
-    padding: 8px 16px;
     font-size: 19px;
-    font-weight: 200;
+    font-weight: 600;
+    padding: 12px 20px;
     border-radius: 100px;
     border: none;
     cursor: pointer;
-    font-weight: 600;
-    padding: 12px 20px;
 }
-.down-btn{
+
+.down-btn {
     background-color: beige;
     color: #2C44D4;
 }
-.down-btn:hover{
+
+.down-btn:hover, .open-btn:hover {
     box-shadow: 0 0 100px black;
 }
-.open-btn{
-  background-color: #2C44D4;
-  color: white;
+
+.open-btn {
+    background-color: #2C44D4;
+    color: white;
 }
-.open-btn:hover{
-    box-shadow: 0 0 100px black;
-}
-.chats{
+
+.chats {
     display: flex;
     flex-direction: column;
-    gap: 328px;
-    margin-top: 100px;
-
+    gap: 50px; 
+    margin-top: 50px;
 }
-.card{
-    max-width: 1300px;
-    height: 632px;
-    width: 100%;
+
+.card {
+    max-width: 100%;
+    height: auto; 
     padding: 20px;
-    background: rgba( 255, 255, 255, 0.1 );
-    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
-    backdrop-filter: blur( 10.5px );
-    -webkit-backdrop-filter: blur( 10.5px );
-    border-radius: 10px;
-    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    background: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(10.5px);
+    -webkit-backdrop-filter: blur(10.5px);
+    border-radius: 26px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
     display: flex;
+    flex-direction: column; 
     align-items: center;
-    gap: 10px;
-    border-radius:26px;
     color: white;
-    
+    gap: 20px;
 }
-.card-media{
-    border-radius: 16px;
-}
-.card-media video{
-  padding: 10px;
-  height: 623px;
-  border-radius: 26px;
 
+.card-media video {
+    width: 100%; 
+    height: auto;
+    border-radius: 26px;
 }
-.card h2{
-    font-size: 44px;
+
+.card h2 {
+    font-size: 34px;
     font-weight: 800;
     margin-bottom: 5px;
     text-transform: capitalize;
-}
-.card p{
-    font-size: 22px;
-    line-height: 35px;
-    text-transform: capitalize;
-}
-.card-details{
-    padding: 25px;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
+    text-align: center; 
 }
 
-.go-chat{
-    padding-top: 220px;
+.card p {
+    font-size: 18px;
+    line-height: 30px;
+    text-transform: capitalize;
+}
+
+.go-chat {
+    padding-top: 100px; 
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 20px;
 }
-.go-chat h2{
-    font-size: 56px;
+
+.go-chat h2 {
+    font-size: 40px; 
     color: white;
     font-weight: 700;
     text-align: center;
 }
-.go-chat .down-btn{
+
+.go-chat .down-btn {
     margin-top: 20px;
-    padding: 8px 16px;
     font-size: 19px;
-    font-weight: 200;
+    font-weight: 600;
+    padding: 12px 20px;
     border-radius: 100px;
     border: none;
     cursor: pointer;
-    font-weight: 600;
-    padding: 12px 20px;
 }
-.go-chat img{
-    width: 100%;
+
+.go-chat img {
+    width: 100%; 
+}
+
+@media (max-width: 768px) {
+    .header-btn {
+        font-size: 12px;
+        padding: 6px 12px;
+    }
+
+    .hero {
+        flex-direction: column;
+        height: auto;
+        padding: 20px;
+    }
+
+    .details h1 {
+        font-size: 30px;
+    }
+
+    .details p {
+        font-size: 16px;
+    }
+
+    .card {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .card h2 {
+        font-size: 28px;
+    }
+
+    .card p {
+        font-size: 16px;
+    }
+
+    .go-chat h2 {
+        font-size: 28px;
+    }
+
+    .go-chat img {
+        max-width: 90%;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-btns {
+        flex-direction: column; 
+        gap: 10px;
+    }
+
+    .details h1 {
+        font-size: 24px;
+    }
+
+    .details p {
+        font-size: 14px;
+    }
+
+    .card h2 {
+        font-size: 22px;
+    }
+
+    .card p {
+        font-size: 14px;
+    }
+
+    .go-chat h2 {
+        font-size: 24px;
+    }
 }
